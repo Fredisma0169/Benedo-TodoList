@@ -28,7 +28,7 @@ struct ListView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink {
-                    Text("Destination")
+                    AddView()
                 } label: {
                     Text("Add")
                 }
