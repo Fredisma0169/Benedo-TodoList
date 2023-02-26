@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00F7CAD29AAC061001E62D3 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F7CAC29AAC061001E62D3 /* ListRowView.swift */; };
+		A00F7CAF29AB9293001E62D3 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F7CAE29AB9292001E62D3 /* AddView.swift */; };
 		A07338DA29AAA02000E65D08 /* Todo_BenedoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07338D929AAA02000E65D08 /* Todo_BenedoApp.swift */; };
 		A07338DE29AAA02700E65D08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07338DD29AAA02700E65D08 /* Assets.xcassets */; };
 		A07338E129AAA02700E65D08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07338E029AAA02700E65D08 /* Preview Assets.xcassets */; };
@@ -14,7 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A07338D629AAA02000E65D08 /* Todo_Benedo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo_Benedo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00F7CAC29AAC061001E62D3 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		A00F7CAE29AB9292001E62D3 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		A07338D629AAA02000E65D08 /* Todo Benedo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo Benedo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07338D929AAA02000E65D08 /* Todo_BenedoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_BenedoApp.swift; sourceTree = "<group>"; };
 		A07338DD29AAA02700E65D08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A07338E029AAA02700E65D08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -35,7 +39,7 @@
 		A07338CD29AAA02000E65D08 = {
 			isa = PBXGroup;
 			children = (
-				A07338D829AAA02000E65D08 /* Todo_Benedo */,
+				A07338D829AAA02000E65D08 /* Todo Benedo */,
 				A07338D729AAA02000E65D08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,12 +47,12 @@
 		A07338D729AAA02000E65D08 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A07338D629AAA02000E65D08 /* Todo_Benedo.app */,
+				A07338D629AAA02000E65D08 /* Todo Benedo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A07338D829AAA02000E65D08 /* Todo_Benedo */ = {
+		A07338D829AAA02000E65D08 /* Todo Benedo */ = {
 			isa = PBXGroup;
 			children = (
 				A07338D929AAA02000E65D08 /* Todo_BenedoApp.swift */,
@@ -58,7 +62,7 @@
 				A07338DD29AAA02700E65D08 /* Assets.xcassets */,
 				A07338DF29AAA02700E65D08 /* Preview Content */,
 			);
-			path = Todo_Benedo;
+			path = "Todo Benedo";
 			sourceTree = "<group>";
 		};
 		A07338DF29AAA02700E65D08 /* Preview Content */ = {
@@ -72,6 +76,8 @@
 		A07338E729AAA0B700E65D08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A00F7CAE29AB9292001E62D3 /* AddView.swift */,
+				A00F7CAC29AAC061001E62D3 /* ListRowView.swift */,
 				A07338EA29AAA11400E65D08 /* ListView.swift */,
 			);
 			path = Views;
@@ -94,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A07338D529AAA02000E65D08 /* Todo_Benedo */ = {
+		A07338D529AAA02000E65D08 /* Todo Benedo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A07338E429AAA02700E65D08 /* Build configuration list for PBXNativeTarget "Todo_Benedo" */;
+			buildConfigurationList = A07338E429AAA02700E65D08 /* Build configuration list for PBXNativeTarget "Todo Benedo" */;
 			buildPhases = (
 				A07338D229AAA02000E65D08 /* Sources */,
 				A07338D329AAA02000E65D08 /* Frameworks */,
@@ -106,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = Todo_Benedo;
+			name = "Todo Benedo";
 			productName = Todo_Benedo;
-			productReference = A07338D629AAA02000E65D08 /* Todo_Benedo.app */;
+			productReference = A07338D629AAA02000E65D08 /* Todo Benedo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A07338D129AAA02000E65D08 /* Build configuration list for PBXProject "Todo_Benedo" */;
+			buildConfigurationList = A07338D129AAA02000E65D08 /* Build configuration list for PBXProject "Todo Benedo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A07338D529AAA02000E65D08 /* Todo_Benedo */,
+				A07338D529AAA02000E65D08 /* Todo Benedo */,
 			);
 		};
 /* End PBXProject section */
@@ -161,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00F7CAF29AB9293001E62D3 /* AddView.swift in Sources */,
 				A07338DA29AAA02000E65D08 /* Todo_BenedoApp.swift in Sources */,
 				A07338EB29AAA11400E65D08 /* ListView.swift in Sources */,
+				A00F7CAD29AAC061001E62D3 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,15 +298,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Todo_Benedo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Todo\\ Benedo/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = Z575CPQ33L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,15 +329,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Todo_Benedo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Todo\\ Benedo/Preview\\ Content/Preview\\ Assets.xcassets";
 				DEVELOPMENT_TEAM = Z575CPQ33L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A07338D129AAA02000E65D08 /* Build configuration list for PBXProject "Todo_Benedo" */ = {
+		A07338D129AAA02000E65D08 /* Build configuration list for PBXProject "Todo Benedo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A07338E229AAA02700E65D08 /* Debug */,
@@ -353,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A07338E429AAA02700E65D08 /* Build configuration list for PBXNativeTarget "Todo_Benedo" */ = {
+		A07338E429AAA02700E65D08 /* Build configuration list for PBXNativeTarget "Todo Benedo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A07338E529AAA02700E65D08 /* Debug */,
