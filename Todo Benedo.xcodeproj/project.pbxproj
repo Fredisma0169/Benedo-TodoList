@@ -10,6 +10,8 @@
 		A00F7CAD29AAC061001E62D3 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F7CAC29AAC061001E62D3 /* ListRowView.swift */; };
 		A00F7CAF29AB9293001E62D3 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F7CAE29AB9292001E62D3 /* AddView.swift */; };
 		A00F7CB129ABA882001E62D3 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F7CB029ABA881001E62D3 /* ItemModel.swift */; };
+		A00F7CB329ACD187001E62D3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00F7CB229ACD187001E62D3 /* Launch Screen.storyboard */; };
+		A00F7CB529ACD323001E62D3 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F7CB429ACD322001E62D3 /* ListViewModel.swift */; };
 		A07338DA29AAA02000E65D08 /* Todo_BenedoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07338D929AAA02000E65D08 /* Todo_BenedoApp.swift */; };
 		A07338DE29AAA02700E65D08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07338DD29AAA02700E65D08 /* Assets.xcassets */; };
 		A07338E129AAA02700E65D08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07338E029AAA02700E65D08 /* Preview Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		A00F7CAC29AAC061001E62D3 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		A00F7CAE29AB9292001E62D3 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		A00F7CB029ABA881001E62D3 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		A00F7CB229ACD187001E62D3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A00F7CB429ACD322001E62D3 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		A07338D629AAA02000E65D08 /* Todo Benedo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo Benedo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07338D929AAA02000E65D08 /* Todo_BenedoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_BenedoApp.swift; sourceTree = "<group>"; };
 		A07338DD29AAA02700E65D08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 		A07338CD29AAA02000E65D08 = {
 			isa = PBXGroup;
 			children = (
+				A00F7CB229ACD187001E62D3 /* Launch Screen.storyboard */,
 				A07338D829AAA02000E65D08 /* Todo Benedo */,
 				A07338D729AAA02000E65D08 /* Products */,
 			);
@@ -59,8 +64,8 @@
 			children = (
 				A07338D929AAA02000E65D08 /* Todo_BenedoApp.swift */,
 				A07338E829AAA0C500E65D08 /* Models */,
+				A07338E929AAA0CF00E65D08 /* ViewModels */,
 				A07338E729AAA0B700E65D08 /* Views */,
-				A07338E929AAA0CF00E65D08 /* ViewModel */,
 				A07338DD29AAA02700E65D08 /* Assets.xcassets */,
 				A07338DF29AAA02700E65D08 /* Preview Content */,
 			);
@@ -78,9 +83,9 @@
 		A07338E729AAA0B700E65D08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A00F7CAE29AB9292001E62D3 /* AddView.swift */,
-				A00F7CAC29AAC061001E62D3 /* ListRowView.swift */,
 				A07338EA29AAA11400E65D08 /* ListView.swift */,
+				A00F7CAC29AAC061001E62D3 /* ListRowView.swift */,
+				A00F7CAE29AB9292001E62D3 /* AddView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,11 +98,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		A07338E929AAA0CF00E65D08 /* ViewModel */ = {
+		A07338E929AAA0CF00E65D08 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A00F7CB429ACD322001E62D3 /* ListViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00F7CB329ACD187001E62D3 /* Launch Screen.storyboard in Resources */,
 				A07338E129AAA02700E65D08 /* Preview Assets.xcassets in Resources */,
 				A07338DE29AAA02700E65D08 /* Assets.xcassets in Resources */,
 			);
@@ -172,6 +179,7 @@
 			files = (
 				A00F7CB129ABA882001E62D3 /* ItemModel.swift in Sources */,
 				A00F7CAF29AB9293001E62D3 /* AddView.swift in Sources */,
+				A00F7CB529ACD323001E62D3 /* ListViewModel.swift in Sources */,
 				A07338DA29AAA02000E65D08 /* Todo_BenedoApp.swift in Sources */,
 				A07338EB29AAA11400E65D08 /* ListView.swift in Sources */,
 				A00F7CAD29AAC061001E62D3 /* ListRowView.swift in Sources */,

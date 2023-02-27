@@ -8,20 +8,25 @@
 import SwiftUI
 
 struct ListView: View {
-    @State private var items: [String] = [
-        "This is the first title!",
-        "This is the second!",
-        "Third"
-    ]
+    
+    @EnvironmentObject var listViewModel: ListViewModel
     
     var body: some View {
         List {
-            ForEach(items, id: \.self) { item in
-                ListRowView(title: item)
+            ForEach(listViewModel.items) { item in
+                ListRowView(item: item)
+                    .onTapGesture {
+                        withAnimation(.spring()) {
+                            listViewModel.updateItem(item: item)
+                        }
+                    }
             }
+            .onDelete (perform: listViewModel.deleteItem) // MARK: Pour Supprimer
+            .onMove (perform: listViewModel.moveItem) // MARK: Pour changer la position
+//            .swipeActions // Mark: Autre option
         }
         .listStyle(.plain)
-        .navigationTitle("ToDo List📝")
+        .navigationTitle("Benedo📝")
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 EditButton()
@@ -30,9 +35,8 @@ struct ListView: View {
                 NavigationLink {
                     AddView()
                 } label: {
-                    Text("Add")
+                    Text("Ajouter")
                 }
-
             }
         }
     }
@@ -41,11 +45,13 @@ struct ListView: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
        
-        NavigationSplitView {
-            ListView()
-        } detail: {
+        NavigationView {
             ListView()
         }
+//        detail: {
+//            ListView()
+//        }
+        .environmentObject(ListViewModel())
 
     }
 }
